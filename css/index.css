@@ -1,0 +1,19 @@
+body {
+    background-color: #000000;
+}
+.title {
+    color: #ffffff;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.logo {
+    width: 250px;
+    height: auto;
+}
+.main {
+    color: #ffffff;
+}
+.foot {
+    color: #ffffff;
+    text-align: center;
+}
