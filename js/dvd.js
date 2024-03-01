@@ -145,3 +145,11 @@ function setStyle(element, properties) {
   }
   element.style.cssText += css;
 }
+
+function changeDVDDisplay(checked) {
+  if (checked) {
+    document.getElementById('dvd').style.visibility = 'visible';
+  } else {
+    document.getElementById('dvd').style.visibility = 'hidden';
+  }
+}

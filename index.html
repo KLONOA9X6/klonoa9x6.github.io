@@ -5,6 +5,7 @@
   <title>Wahoo!</title>
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/dvd.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
   <script type="text/javascript" src="js/foot_change.js"></script>
 </head>
 
@@ -34,7 +35,7 @@
   </script>
   <script>
     window.onload = () => {
-      // 自动播放，这个看浏览器策略限制
+      <!--自动播放，这个看浏览器策略限制，大多数需要用户操作之后才能播放-->
       try {
         playOrg();
       } catch (e) {
@@ -46,7 +47,7 @@
   <script id="rendered-js" type="text/javascript" src="js/dvd.js"></script>
   <div class="header">
     <img src="img/logo.png" class="logo" alt="淦NM，图呢？" />
-    <h1 class="title">Wahoo!</h1>
+    <h1 class="title" align="center">Wahoo!</h1>
   </div>
   <hr width="100%" color="#FFFFFF" />
   <div class="main">
@@ -55,26 +56,29 @@
       你成功连接到了该站点。<br />
       至于这个网站是干嘛的，我也不知道。<br />
       但是你可以在这里找到我。<br />
-      <a href="https://space.bilibili.com/357184960" target="_blank">Bilibili</a
-      ><br />
-      <a href="https://github.com/KLONOA9X6" target="_blank">Github</a><br />
+      <a href="https://space.bilibili.com/357184960" target="_blank"><i class="bi-youtube"></i>Bilibili</a><br />
+      <a href="https://github.com/KLONOA9X6" target="_blank"><i class="bi-github"></i>Github</a><br />
     </p>
 
     <p>
       Music provided by
-      <a href="https://github.com/alula/organya-js" target="_blank"
-        >organya-js</a
-      ><br />
+      <a href="https://github.com/alula/organya-js" target="_blank"><i class="bi-github"></i>organya-js</a><br />
       <button onclick="playOrg()">Play</button>
       <button onclick="stopOrg()">Stop</button>
+    </p>
+
+    <p>知道你们比较烦这个DVD，所以给你们个这个：
+    <div>
+      <input type="checkbox" id="dvd_display" name="dvd_display" checked onchange="javascript:changeDVDDisplay(checked)" />
+      <label for="dvd_display">DVD显示</label>
+    </div>
     </p>
   </div>
 </body>
 <footer>
   <hr width="100%" color="#FFFFFF" />
   <div class="foot">
-    <span
-      ><a herf="javascript:void(0)" onclick="textChange()" id="footer">
+    <span><a herf="javascript:void(0)" onclick="textChange()" id="footer">
         别动这个，有bug
       </a>
     </span>

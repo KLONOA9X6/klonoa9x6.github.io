@@ -1,19 +1,18 @@
 body {
     background-color: #000000;
+    color: #ffffff;
 }
 .title {
-    color: #ffffff;
     font-size: x-large;
     font-family: sans-serif;
 }
 .logo {
-    width: 250px;
+    width: 300px;
     height: auto;
-}
-.main {
-    color: #ffffff;
+    display: block;
+    margin: auto;
+    clear: both;
 }
 .foot {
-    color: #ffffff;
     text-align: center;
 }
