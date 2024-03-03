@@ -12,7 +12,13 @@ function textChange() {
 		"Ja ,Treffer!",
 		"九六的代码是九六写的，但是九六看不懂自己写了什么",
 		"特别是其搭载 690 战术核显卡的改进版本，一发就可摧毁一个航母战斗群。",
-		"INTERNET YAMERO!"
+		"INTERNET YAMERO!",
+		"KLONOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+		"Beep...Beep...",
+		"Also try Celeste!",
+		"For your Phantomile...",
+		"Ah s**t, here we go again.",
+		"Go f*** yourself!"
 	]
     document.getElementById("footer").textContent = textList[Math.floor(Math.random() * textList.length)];
 }
